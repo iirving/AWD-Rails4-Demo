@@ -1,5 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 
+  <div class="field">
+    title 
+    <%= @product.title %>
+  </div>
+  <div class="field">
+    description<br />
+    <%= @product.description %>
+
+  </div>
+  <div class="field">
+    image_url 
+    <%= @product.image_url %>
+  </div>
+  <div class="field">
+    price<br />
+    <%= @product.price %>
+  </div>
+
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
