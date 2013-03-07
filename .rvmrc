@@ -1,1 +1,7 @@
-rvm ruby-2.0.0-p0@AWD4
+environment_id="ruby-2.0.0-p0@AWD4"
+
+if [[ -n "$rvm_environments_path" && -s "$rvm_environments_path/environment_id" ]] ; then
+  . "$rvm_environments_path/$environment_id"
+else
+  rvm --create use  "$environment_id"
+fi
