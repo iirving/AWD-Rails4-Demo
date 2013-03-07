@@ -5,6 +5,9 @@
     title 
     <%= @product.title %>
   </div>
+  <div>
+    <%= image_tag(@product.image_url, :size => "48x48") %>
+  </div>
   <div class="field">
     description<br />
     <%= @product.description %>
