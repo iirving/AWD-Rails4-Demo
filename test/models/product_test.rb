@@ -25,6 +25,11 @@ class ProductTest < ActiveSupport::TestCase
 		assert product.invalid?
 		assert_equal ['must be greater than or equal to 0.01'], product.errors[:price]
 
+			# price is negative but small
+		product.price = -0.0011
+		assert product.invalid?
+		assert_equal ['must be greater than or equal to 0.01'], product.errors[:price]
+
 		# price is zero
 		product.price = 0
 		assert product.invalid?

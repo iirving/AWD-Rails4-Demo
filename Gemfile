@@ -3,8 +3,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
 
-group :development do
+# guard related gems
+group :development, :tools do
   gem 'guard'
+  gem 'growl'
+  gem 'guard-livereload'
+  gem "rb-fsevent", "~> 0.9.3"
 end
 
 
