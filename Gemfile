@@ -9,7 +9,6 @@ group :development, :tools do
   gem 'growl'
   gem 'guard-livereload'
   gem "rb-fsevent", "~> 0.9.3"
-  gem 'guard-reloader'
 end
 
 

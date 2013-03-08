@@ -26,10 +26,3 @@ end
 #   watch(%r{^app/views/.+\.rb$})                      { "test/integration" }
 #   watch('app/controllers/application_controller.rb') { ["test/functional", "test/integration"] }
 # end
-
-guard 'reloader' do
-  watch(%r{^app/models/(.+)\.rb$})
-  watch(%r{^test/unit/(.+)\.rb$})
-  watch(%r{^app/controllers/(.+)\.rb$})
-  watch(%r{^test/functional/(.+)\.rb$})
-end
