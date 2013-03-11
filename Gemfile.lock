@@ -135,6 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coderay (~> 1.0.9)
   coffee-rails (~> 4.0.0.beta1)
   growl
   guard
