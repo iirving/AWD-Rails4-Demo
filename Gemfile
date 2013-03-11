@@ -4,12 +4,21 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.beta1'
 
 # guard related gems
-group :development, :tools do
+group :development, :tools, :test do
   gem 'guard'
   gem 'growl'
   gem 'guard-livereload'
   gem "rb-fsevent", "~> 0.9.3"
+#  gem "growl_notify", "~> 0.0.3"
 end
+
+#testing for Rspec, Cucumber, Test::Unit https://github.com/sporkrb http://spork.rubyforge.org/
+#as of march 11 not working with R4
+#group :development, :test do
+#	gem 'spork-rails'
+#  gem  'spork-testunit’
+#   gem 'guard-spork
+#end
 
 
 gem 'sqlite3'
