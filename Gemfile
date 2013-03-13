@@ -6,6 +6,10 @@ gem 'rails', '4.0.0.beta1'
 
 group :development do
 	gem "coderay", "~> 1.0.9"
+ # gem "brice", "~> 0.2.6"  # Extra cool IRb goodness for the masses there is a ~/.irbrc file
+ gem "wirb"
+ gem 'irbtools', :require => false
+ gem 'irbtools-more'
 end
 
 
