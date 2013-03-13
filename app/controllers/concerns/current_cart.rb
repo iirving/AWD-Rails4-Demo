@@ -8,6 +8,15 @@ module CurrentCart
 		rescue ActiveRecord::RecordNotFound
 			@cart = Cart.create
 			session[:cart_id] = @cart.id
+
+		#	if session[:counter].nil? them
+		#		session[:counter] = 1
+		#	else
+		#		session[:counter] += 1
+		#	end
+
+
+
 		end
 
 
