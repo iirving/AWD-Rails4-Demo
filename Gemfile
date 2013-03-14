@@ -9,7 +9,8 @@ group :development do
  # gem "brice", "~> 0.2.6"  # Extra cool IRb goodness for the masses there is a ~/.irbrc file
  gem "wirb"
  gem 'irbtools', :require => false
- gem 'irbtools-more'
+# gem "irbtools-more", "~> 1.4.0"  # requires gem "drx", "~> 0.4.5" which is not installing :(
+
 end
 
 
