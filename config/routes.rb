@@ -1,5 +1,16 @@
 Work::Application.routes.draw do
+
+  resources :orders
+
+  delete 'line_items?product_id=:product_id', to: 'line_items#destroy'
+  delete 'line_items?product_id=:product_id' => 'line_items#destroy'
+  delete 'line_items/:product_id/product' => 'line_items#destroy'
   resources :line_items
+
+  
+
+ # delete 'line_items?product_id=:product_id' => 'line_items#delete', as: :line_items
+  resources :posts, path: '/line_items/posts'
 
   resources :carts
 
