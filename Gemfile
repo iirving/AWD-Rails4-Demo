@@ -13,15 +13,21 @@ group :development do
 
 end
 
-
-
-# guard related gems
+# guard related gems > to run $guard start
 group :development, :tools, :test do
   gem 'guard'
   gem 'growl'
   gem 'guard-livereload'
   gem "rb-fsevent", "~> 0.9.3"
 #  gem "growl_notify", "~> 0.0.3"
+end
+#auto test related > see .autotest fiel for costumization >> to run $autotest
+group :development do
+  gem 'ZenTest'
+  gem 'autotest-rails'
+  gem 'autotest-growl'
+  gem 'autotest-fsevent'
+#  gem 'gem install redgreen'
 end
 
 #testing for Rspec, Cucumber, Test::Unit https://github.com/sporkrb http://spork.rubyforge.org/
