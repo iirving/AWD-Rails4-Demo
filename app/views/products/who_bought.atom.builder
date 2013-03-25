@@ -6,7 +6,7 @@ atom_feed do |feed|
 		feed.entry(order) do |entry|
 			entry.title "Order #{order.id}"
 			entry.summary type: 'xhtml' do |xhtml|
-				xhtml.shipped to #{order.address}
+				xhtml.P 'shipped to #{order.address}'
 
 				xhtml.table do
           		xhtml.tr do
