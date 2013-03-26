@@ -38,6 +38,9 @@ end
 #   gem 'guard-spork
 #end
 
+ group :test do
+   gem 'simplecov', :require => false
+ end
 
 gem 'sqlite3'
 

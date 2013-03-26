@@ -25,3 +25,7 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# SimpleCov generated files #
+#############################
+coverage
