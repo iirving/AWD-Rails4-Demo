@@ -13,6 +13,10 @@ group :development do
 
 end
 
+group :development do
+  gem "rails_best_practices"
+end
+
 # guard related gems > to run $guard start
 group :development, :tools, :test do
   gem 'guard'
