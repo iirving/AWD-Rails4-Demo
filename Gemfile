@@ -17,6 +17,10 @@ group :development do
   gem "rails_best_practices"
 end
 
+group :development do  #used for https://github.com/dejan/rails_panel rails panel
+  gem 'meta_request'
+end
+
 # guard related gems > to run $guard start
 group :development, :tools, :test do
   gem 'guard'
@@ -24,6 +28,8 @@ group :development, :tools, :test do
   gem 'guard-livereload'
   gem "rb-fsevent", "~> 0.9.3"
 #  gem "growl_notify", "~> 0.0.3"
+gem 'brakeman', :require => false
+ gem 'guard-brakeman'
 end
 #auto test related > see .autotest fiel for costumization >> to run $autotest
 group :development do
