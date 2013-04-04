@@ -1,0 +1,9 @@
+OrderNotifier#received
+
+Dear <%= @order.name %>
+Thank you for your order
+<%=	 render @order.line_items %>
+
+We'll send another email when your order ships
+
+The Store Team!
