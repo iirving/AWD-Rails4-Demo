@@ -18,6 +18,7 @@ group :development, :tools, :test do
   gem 'guard'
   gem 'growl'
   gem 'guard-livereload'
+  gem 'guard-rails'
   gem "rb-fsevent", "~> 0.9.3"
 #  gem "growl_notify", "~> 0.0.3"
 end

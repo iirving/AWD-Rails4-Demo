@@ -15,6 +15,11 @@ guard 'livereload' do
 #   watch(%r{app/views/.+\.(erb|haml|slim)}) { |m| Growl.notify m[0],  :icon => :jpeg, :title => 'File Changed'}
 end
 
+guard 'rails', :port => 5000 do
+  watch('Gemfile.lock')
+  watch(%r{^(config|lib)/.*})
+end
+
 # guard :test do
 #   watch(%r{^lib/(.+)\.rb$})     { |m| "test/#{m[1]}_test.rb" }
 #   watch(%r{^test/.+_test\.rb$})
