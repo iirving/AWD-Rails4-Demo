@@ -1,5 +1,7 @@
 Work::Application.routes.draw do
 
+  resources :users
+
   resources :orders
 
 #  delete 'line_items?product_id=:product_id', to: 'line_items#destroy'
