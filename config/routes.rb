@@ -1,5 +1,17 @@
 Work::Application.routes.draw do
 
+get 'admin' => 'admin#index'
+
+controller :sessions do
+   get 'login' => :new
+   post 'login' => :create
+   delete 'logout' => :destroy
+ end
+
+  get "admin/index"
+  
+  resources :users
+
   resources :orders
 
 #  delete 'line_items?product_id=:product_id', to: 'line_items#destroy'
