@@ -15,9 +15,7 @@
 				<div class="price_line">
 					<span class="price"><%= number_to_currency(product.price) %></span>
 					<%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true %>
-					<%= button_to 'Remove from Cart', line_items_path(product_id: product), remote: true,
-							:method => :delete,  data: { confirm: 'Are you sure?'}   %>
-				  <%= button_to '--', line_items_path(product_id: product), :method => :delete  %>
+					
 				</div>
 
 
@@ -26,3 +24,4 @@
 		<% end %>
 	<% end %>
 <% end %>
+

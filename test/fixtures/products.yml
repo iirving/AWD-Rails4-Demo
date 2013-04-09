@@ -11,15 +11,15 @@
 #  column: value
 
 one:
-  title: MyString
+  title: book one MyString
   description: MyText
-  image_url: MyString
+  image_url: ruby.png
   price: 9.99
 
 two:
-  title: MyString
+  title: book two MyString
   description: MyText
-  image_url: MyString
+  image_url: ruby.png
   price: 9.99
 
 ruby:
