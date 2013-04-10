@@ -7,7 +7,7 @@ It is based on the Depot app of [Agile Web Development with Rails (4th edition)]
 As of April 2013 both the book and the framework are in beta;
 
 Where the code, functionally deviates from that presented in the book is entirely my fault - really.
-=========
+
 ### Ruby version : 2.0.0
 ### Rails version : 4.0.0.beta1
 =========
@@ -28,7 +28,7 @@ or to just populate it try :
 I'm using the Guard gem to do Automate at bunch of things like : livereload (hooks into a Chrome plug-in), Bundle, and recompliing assets, and then hooking it into Growl for notifications. to start the guard process do :
     $guard start
 
-# Tests 
+# Tests
 currently having promblems running guard-test so I've fallen back to AutoTest (running in yet another terminal)
 
     $autotest
