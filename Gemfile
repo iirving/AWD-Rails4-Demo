@@ -5,6 +5,7 @@ ruby "2.0.0"    #currenlty required to run rails4 on Heroku
 
 gem 'rails', '4.0.0.beta1'
 
+gem 'heroku'
 
 group :development do
 	gem "coderay", "~> 1.0.9"
