@@ -48,8 +48,12 @@ end
 group :development do
   gem 'sqlite3'
 end
+
+
 group :production do
   gem "pg", "~> 0.15.1"
+  gem 'unicorn'
+  gem 'rails3_serve_static_assets' , github: 'heroku/rails3_serve_static_assets'
 end
 
 
@@ -77,7 +81,7 @@ gem 'jbuilder', '~> 1.0.1'
 gem "bcrypt-ruby", "~> 3.0.1"
 
 # Use unicorn as the app server
-gem 'unicorn'
+
 
 # Deploy with Capistrano
 # gem 'capistrano', group: :development
