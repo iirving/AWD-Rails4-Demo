@@ -43,7 +43,14 @@ end
 #end
 
 
-gem 'sqlite3'
+# sqllite in dev and postgrel in prod
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem "pg", "~> 0.15.1"
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -69,7 +76,7 @@ gem 'jbuilder', '~> 1.0.1'
 gem "bcrypt-ruby", "~> 3.0.1"
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano', group: :development
