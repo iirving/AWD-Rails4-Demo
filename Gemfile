@@ -53,7 +53,7 @@ end
 group :production do
   gem "pg", "~> 0.15.1"
   gem 'unicorn'
- # gem 'rails3_serve_static_assets' , github: 'heroku/rails3_serve_static_assets.git'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
 
