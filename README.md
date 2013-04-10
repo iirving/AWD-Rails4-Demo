@@ -1,6 +1,7 @@
 AWD Rails4 Demo
 =========
 This is a  Rails 4 beta, Ruby 2 DEMO APP, [Demo the App](http://awd4.herokuapp.com)
+[![Code Climate](https://codeclimate.com/github/iirving/AWD-Rails4-Demo.png)](https://codeclimate.com/github/iirving/AWD-Rails4-Demo)
 
 It is based on the Depot app of [Agile Web Development with Rails (4th edition)](http://pragprog.com/book/rails4/agile-web-development-with-rails) published by The Pragmatic Bookshelf.  Good Stuff, buy it now!
 
