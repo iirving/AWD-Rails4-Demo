@@ -26,7 +26,7 @@ group :development, :tools, :test do
   gem "rb-fsevent", "~> 0.9.3"
 #  gem "growl_notify", "~> 0.0.3"
 end
-#auto test related > see .autotest fiel for costumization >> to run $autotest
+#auto test related > see .autotest file for costumization >> to run $autotest
 group :development do
   gem 'ZenTest'
   gem 'autotest-rails'
