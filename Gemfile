@@ -43,6 +43,11 @@ end
 #   gem 'guard-spork
 #end
 
+group :test do
+  gem "rake" # this is here for travis-ci
+end
+
+
 
 # sqllite in dev and postgrel in prod
 group :development do
