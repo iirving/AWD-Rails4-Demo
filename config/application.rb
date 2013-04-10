@@ -19,6 +19,11 @@ module Work
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.assets.enabled = true
-    config.assets.initialize_on_precompile=true
+    #Needs to be false on Heroku
+    config.assets.initialize_on_precompile=false
+    # Serving static assets and setting cache headers
+    config.serve_static_assets = true
+    config.static_cache_control = "public, max-age=31536000"
+
   end
 end
