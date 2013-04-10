@@ -1,5 +1,5 @@
 
-This is a  Rails 4 beta, Ruby 2, (Demo the app)[http://awd4.herokuapp.com]
+This is a  Rails 4 beta, Ruby 2 DEMO APP, [Demo the App](http://awd4.herokuapp.com)
 
 It is based on the Depot app of [Agile Web Development with Rails (4th edition)](http://pragprog.com/book/rails4/agile-web-development-with-rails) published by The Pragmatic Bookshelf.  Good Stuff, buy it now!
 
@@ -27,4 +27,4 @@ I'm using the Guard gem to do Automate at bunch of things, and hooking it into G
 
 # See it in DEMO:
 
-it is deployed on Heroku, on free hamster mode, [http://awd4.herokuapp.com] for your amusement and torture testing.
+it is deployed on Heroku, on free hamster mode, (http://awd4.herokuapp.com) for your amusement and torture testing.
