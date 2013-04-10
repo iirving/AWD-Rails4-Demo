@@ -22,3 +22,4 @@ coverage/
 .project
 
 Gemfile.lock
+.ruby-gemset  #ignore this so you can have your own getset name
