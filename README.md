@@ -1,5 +1,5 @@
 
-This is a  Rails 4 beta, Ruby 2, Demo the app [http://awd4.herokuapp.com]
+This is a  Rails 4 beta, Ruby 2, (Demo the app) [http://awd4.herokuapp.com]
 
 It is based on the Depot app of [Agile Web Development with Rails (4th edition)](http://pragprog.com/book/rails4/agile-web-development-with-rails) published by The Pragmatic Bookshelf.  Good Stuff, buy it now!
 
@@ -12,9 +12,8 @@ Where the code, functionally deviates from that presented in the book is entirel
 
 
 # Configuration
-
 after cloning this repo run bundle, to install the required gems, for gods sake use RMV to create a per-project gemset.
-$bundle
+    $bundle
 
 # Database initialization
     $rake db:setup
