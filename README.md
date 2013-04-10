@@ -7,8 +7,8 @@ As of April 2013 both the book and the framework are in beta;
 
 Where the code, functionally deviates from that presented in the book is entirely my fault - really.
 
-# Ruby version : 2.0.0
-# Rails version : 4.0.0.beta1
+### Ruby version : 2.0.0
+### Rails version : 4.0.0.beta1
 
 
 # Configuration
