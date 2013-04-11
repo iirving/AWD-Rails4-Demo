@@ -7,18 +7,21 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'heroku'
 
+## irb releated gems
 group :development do
 	gem "coderay", "~> 1.0.9"
  # gem "brice", "~> 0.2.6"  # Extra cool IRb goodness for the masses there is a ~/.irbrc file
  gem "wirb"
  gem 'irbtools', :require => false
+ gem "awesome_print"
 # gem "irbtools-more", "~> 1.4.0"  # requires gem "drx", "~> 0.4.5" which is not installing :(
 
 end
 
 # guard related gems > to run $guard start
 group :development, :tools, :test do
-  gem 'guard'
+  gem "lumberjack"  
+  gem "guard"
   gem 'growl'
   gem 'guard-livereload'
   gem 'guard-rails'
@@ -55,7 +58,7 @@ group :development do
 end
 
 
-group :production do
+group :production do   #heroku related
   gem "pg", "~> 0.15.1"
   gem 'unicorn'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
@@ -71,7 +74,9 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem "uglifier", "~> 2.0.1"
+
+  gem "tilt"
 end
 
 gem 'jquery-rails'
@@ -80,16 +85,14 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.0.1'
+#gem 'jbuilder', '~> 1.0.1'
+gem "jbuilder", "~> 1.3.0"
+
+
+gem "thor"
+gem "multi_json"
+
+
 
 # To use ActiveModel has_secure_password
 gem "bcrypt-ruby", "~> 3.0.1"
-
-# Use unicorn as the app server
-
-
-# Deploy with Capistrano
-# gem 'capistrano', group: :development
-
-# To use debugger
-# gem 'debugger'
