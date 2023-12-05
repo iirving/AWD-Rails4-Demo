@@ -3,9 +3,10 @@ ruby "2.0.0"    #currenlty required to run rails4 on Heroku
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-gem 'rails', '4.0.0.beta1'
+gem 'rails', '4.0.0'
 
-gem 'heroku'
+gem 'heroku', '~> 3.99', '>= 3.99.4'
+gem 'heroku-api', '~> 0.4.3'
 
 ## irb releated gems
 group :development do
@@ -79,7 +80,7 @@ group :assets do
   gem "tilt"
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.4'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
