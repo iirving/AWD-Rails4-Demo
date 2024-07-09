@@ -5,8 +5,9 @@ ruby "2.0.0"    #currenlty required to run rails4 on Heroku
 
 gem 'rails', '4.0.0'
 
-gem 'heroku', '~> 3.99', '>= 3.99.4'
-gem 'heroku-api', '~> 0.4.3'
+# no longer deploying to Heroku so not needed
+# gem 'heroku', '~> 3.99', '>= 3.99.4'
+# gem 'heroku-api', '~> 0.4.3'
 
 ## irb releated gems
 group :development do
